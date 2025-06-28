@@ -344,11 +344,5 @@ Phase 3: Advanced Routing (2-3 weeks)
 └── 5.Two LANs Using Two Router.pkt
 ```
 
-### 📊 File Status & Notes
-| File Name | Status | Notes |
-|-----------|--------|-------|
-| `6.DHCP Server.pkt` | ✅ Primary | Dedicated DHCP server implementation |
-| `DHCP Using Router.pkt` | ✅ Primary | Router-based DHCP implementation |
-| All other `.pkt` files | ✅ Active | Ready for use in laboratory exercises |
 
 **Total Files**: 14 Cisco Packet Tracer simulation files
