@@ -18,8 +18,7 @@ All simulation files are located in the root directory and are organized by func
 
 #### DHCP (Dynamic Host Configuration Protocol)
 - **6.DHCP Server.pkt** - Dedicated DHCP server implementation and configuration
-- **6.DCHP Server.pkt** - Alternative DHCP server setup (duplicate with typo)
-- **dhcp using router.pkt** - Router-based DHCP services configuration
+- **DHCP Using Router.pkt** - Router-based DHCP services configuration
 
 #### DNS (Domain Name System)
 - **7.DNS Server.pkt** - Basic Domain Name System server setup
@@ -50,7 +49,7 @@ All simulation files are located in the root directory and are organized by func
 **Recommended Order:**
 1. `VLAN.pkt` - Virtual network segmentation
 2. `6.DHCP Server.pkt` - Automatic IP address assignment
-3. `dhcp using router.pkt` - Router-based DHCP implementation
+3. `DHCP Using Router.pkt` - Router-based DHCP implementation
 4. `7.DNS Server.pkt` - Basic name resolution services
 5. `8.DNS using Switch.pkt` - DNS in switched environments
 
@@ -75,7 +74,7 @@ All simulation files are located in the root directory and are organized by func
 ### 🌐 Network Services Analysis
 | Service Type | Files Available | Implementation Method | Use Case |
 |--------------|----------------|---------------------|----------|
-| **DHCP** | `6.DHCP Server.pkt`<br>`6.DCHP Server.pkt`<br>`dhcp using router.pkt` | Dedicated Server<br>Router-based | Automatic IP assignment<br>Network configuration |
+| **DHCP** | `6.DHCP Server.pkt`<br>`DHCP Using Router.pkt` | Dedicated Server<br>Router-based | Automatic IP assignment<br>Network configuration |
 | **DNS** | `7.DNS Server.pkt`<br>`8.DNS using Switch.pkt`<br>`9.DNS using router.pkt` | Server-based<br>Switch integration<br>Router integration | Name resolution<br>Domain management |
 | **VLAN** | `VLAN.pkt` | Switch configuration | Network segmentation<br>Security isolation |
 
@@ -230,9 +229,9 @@ Router(config-router)# network 192.168.2.0 0.0.0.255 area 0
 
 2. **Configure DHCP Services**
    - Start with `6.DHCP Server.pkt` for dedicated server approach
-   - Progress to `dhcp using router.pkt` for router-based DHCP
+   - Progress to `DHCP Using Router.pkt` for router-based DHCP
    - Compare implementation approaches and performance
-   - Note: `6.DCHP Server.pkt` is a duplicate file with typo
+   - Note: Both files demonstrate different DHCP implementation methods
 
 3. **Setup DNS Services**
    - Begin with `7.DNS Server.pkt` for basic DNS server configuration
@@ -317,7 +316,7 @@ Computer Networks Laboratory Course Materials
 | **Basic networking concepts** | `Star with switch.pkt` → `Bus With Switch.pkt` | ⭐ Beginner |
 | **Network topologies** | `Ring with Hub.pkt` → `Ring With Switch.pkt` → `Mesh with Switch.pkt` | ⭐⭐ Intermediate |
 | **Advanced topologies** | `Hybrid.pkt` | ⭐⭐⭐ Advanced |
-| **Automatic IP assignment** | `6.DHCP Server.pkt` → `dhcp using router.pkt` | ⭐⭐ Intermediate |
+| **Automatic IP assignment** | `6.DHCP Server.pkt` → `DHCP Using Router.pkt` | ⭐⭐ Intermediate |
 | **Name resolution** | `7.DNS Server.pkt` → `8.DNS using Switch.pkt` → `9.DNS using router.pkt` | ⭐⭐ Intermediate |
 | **Network segmentation** | `VLAN.pkt` | ⭐⭐ Intermediate |
 | **Inter-network routing** | `4.Two LANs Connection Using Router.pkt` → `5.Two LANs Using Two Router.pkt` | ⭐⭐⭐ Advanced |
@@ -335,7 +334,7 @@ Phase 1: Topology Fundamentals (1-2 weeks)
 Phase 2: Network Services (2-3 weeks)  
 ├── VLAN.pkt
 ├── 6.DHCP Server.pkt
-├── dhcp using router.pkt
+├── DHCP Using Router.pkt
 ├── 7.DNS Server.pkt
 ├── 8.DNS using Switch.pkt
 └── 9.DNS using router.pkt
@@ -348,6 +347,8 @@ Phase 3: Advanced Routing (2-3 weeks)
 ### 📊 File Status & Notes
 | File Name | Status | Notes |
 |-----------|--------|-------|
-| `6.DCHP Server.pkt` | ⚠️ Duplicate | Same as `6.DHCP Server.pkt` (contains typo in filename) |
-| `6.DHCP Server.pkt` | ✅ Primary | Use this version for DHCP server learning |
+| `6.DHCP Server.pkt` | ✅ Primary | Dedicated DHCP server implementation |
+| `DHCP Using Router.pkt` | ✅ Primary | Router-based DHCP implementation |
 | All other `.pkt` files | ✅ Active | Ready for use in laboratory exercises |
+
+**Total Files**: 14 Cisco Packet Tracer simulation files
